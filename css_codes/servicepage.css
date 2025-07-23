@@ -9,6 +9,7 @@ h1 {
   padding: 10px;
   margin: 20px;
   font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
 }
 
 .navigation{
@@ -16,8 +17,10 @@ h1 {
   text-align: center;
   padding: 5px;
 }
- 
-.imagecontact{
-    width: 100%;
-    height: fit-content;
+
+.servicelist{
+    text-align: center;
+    text-align: justify;
+    font-family: cursive;
+
 }
