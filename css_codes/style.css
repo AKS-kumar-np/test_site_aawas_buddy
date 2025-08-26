@@ -70,6 +70,7 @@ body{
 .nav-div{
 	display: flex;
 	justify-content: flex-end;
+
 }
 
 
@@ -91,6 +92,7 @@ nav a{
   font-weight: 550;
   font-size: large;
   padding: 30px 2em;
+  padding-top: 36px;
   transition: background-color 150ms ease;
 }
 nav a:hover{
