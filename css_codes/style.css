@@ -417,6 +417,16 @@ button{
 #checkout{
   color: var(--accent-color);
 }
+.site-footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: var(--base-color);
+  font-size: 0.9em;
+  color: var(--text-color);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
 
 
