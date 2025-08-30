@@ -15,7 +15,6 @@
   --box-shadow: rgba(0, 0, 0, 0.2);
 }
 
-
 .darkmode{
   --base-color: #252627;
   --text-color: #c9c9c9;
@@ -28,6 +27,7 @@
 
 
 body{
+  transition: background-color 0.3s ease, color 0.3s ease;
 	background-color: var(--base-color);
 	min-height: 100vh;
 	min-width: 100vh;
@@ -152,9 +152,6 @@ nav a.accent-link{
   outline: 3px solid #ffffff; 
 }
 
-.theme-class{
-  display: none;
-}
 
 
 @media screen and (max-width: 800px) {
@@ -219,45 +216,37 @@ nav a.accent-link{
   .para-img{
     display: none;
   }
+
 }
 
-button{
-  border: none;
-  padding: .8em 2em;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border-radius: 4px;
-  display: inline-block;
-  font: inherit;
-  text-transform: uppercase;
-  font-weight: 500;
-  cursor: pointer;
-}
 
 #theme-switch{
+  border: none;
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  background-color: var(--white-color);
   display: flex;
-  justify-content:right;
-  align-items: end;
-  position: fixed;
-  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 #theme-switch svg{
-  fill: var(--base-color);
+  fill: var(--text-color);
 }
-
 #theme-switch svg:last-child{
   display: none;
 }
-
 .darkmode #theme-switch svg:first-child{
   display: none;
 }
-
 .darkmode #theme-switch svg:last-child{
-  display: inline-block;
+  display: flex;
 }
 
 
