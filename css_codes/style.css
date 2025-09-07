@@ -22,7 +22,7 @@
   --base-color: #252627;
   --less-base: rgb(61, 61, 61);
   --footer-color:#252627;
-  --text-color: #c9c9c9;
+  --text-color: #ffffff;
   --white-color: rgb(51, 44, 44);
   --different-color: rgb(85, 85, 85);
   --hover-color: #3f4044;
@@ -593,6 +593,7 @@ nav a.accent-link{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--text-color);
 }
 
 .test-div{
@@ -611,7 +612,7 @@ nav a.accent-link{
   max-width: 300px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: #f9f9f9;
+  background-color: var(--base-color);
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -635,13 +636,13 @@ nav a.accent-link{
 .testimonial-text {
   font-size: 1rem;
   font-style: italic;
-  color: #333;
+  color: var(--text-color);
 }
 
 .site-footer{
   text-align: center;
   background-color: var(--footer-color);
-  color: #ffffff;
+  color: var(--text-color);
   padding: 1em 0;
   bottom: 0;
   width: 100%;
