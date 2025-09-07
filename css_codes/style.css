@@ -9,6 +9,7 @@
   --text-color: #111528;
   --white-color: rgb(243, 242, 242);
   --hover-color: rgb(185, 185, 185);
+  --less-base: rgb(240, 240, 236);
   --different-color: rgb(255, 239, 167);
   --primary-color: #dbfca5;
   --different-hover: #ff6b00;
@@ -19,6 +20,7 @@
 
 .darkmode{
   --base-color: #252627;
+  --less-base: rgb(61, 61, 61);
   --footer-color:#252627;
   --text-color: #c9c9c9;
   --white-color: rgb(51, 44, 44);
@@ -268,15 +270,31 @@ nav a.accent-link{
 
 .choose {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   color: var(--text-color);
-  flex-direction: column;
   padding: 2rem;
   background-color: var(--primary-color);
 }
 
+.img-div-choose{
+  display: flex;
+  flex: 1;
+}
+
+.choose > div > img{
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid var(--base-color);
+
+}
+
 .list-choose{
   display: flex;
+  margin-left: 4%;
   flex: 1;
   gap: 2rem;
 
@@ -339,7 +357,7 @@ nav a.accent-link{
   background-color: var(--base-color);
 }
 .achievement-circle {
-  background-color: var(--base-color);
+  background-color: var(--less-base);
   border-radius: 50%;
   padding: 2rem;
   width: 180px;
@@ -480,6 +498,41 @@ nav a.accent-link{
 }
 
 
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--primary-color, #007BFF);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: var(--primary-hover, #0056b3);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -539,23 +592,50 @@ nav a.accent-link{
   background-color: var(--different-color);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
+
+.test-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .fheader{
   text-align: center;
+  margin-top: 20px;
   width: 100%;
   height: 2rem;
 }
-.fcard{
-  display: flex;
-  flex-direction: row;
+.testimonial {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.feedback > div > div > img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
 }
 
 .site-footer{
