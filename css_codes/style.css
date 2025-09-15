@@ -46,7 +46,7 @@ body{
 	background-color: var(--base-color);
   border-bottom: 1px solid var(--hover-color);
 	min-width: 100vh;
-	height: 90px;
+	height: 88px;
 	display: flex;
 	justify-content: space-between;
   position: sticky;
@@ -119,9 +119,7 @@ nav a{
 nav a:hover{
   background-color: var(--hover-color);
 }
-nav a.active-link{
-  border-bottom: 2px solid var(--text-color);
-}
+
 nav a.accent-link{
   background-color: var(--accent-color);
 }
@@ -361,6 +359,7 @@ nav a.accent-link{
   background-color: var(--less-base);
   border-radius: 50%;
   padding: 2rem;
+  margin:  20px;
   width: 180px;
   height: 180px;
   display: flex;
@@ -392,10 +391,10 @@ nav a.accent-link{
   text-shadow: 4px 4px 8px rgba(0,0,0,0.7);
 }
 
-.description > p{
+/* .description > p{
   width:400px ;
   margin-left: 20px;
-}
+} */
 
 
 
@@ -488,8 +487,8 @@ nav a.accent-link{
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
   background-color: var(--primary-color);
   padding: 1rem;
 
@@ -498,10 +497,8 @@ nav a.accent-link{
 
 
 .grid > div {
-  transition: all 0.15s;
-  aspect-ratio: 1/1;
-  border-radius: 20px;
-
+  transition: all 0.15s ease;
+  border-radius: 10px;
 
 
 }
@@ -532,8 +529,7 @@ nav a.accent-link{
 
 .grid > div > img{
   width: 100%;
-  height: 180px;
-  border-radius: 20px;
+  max-height: 180px;
 }
 
 .feedback{
