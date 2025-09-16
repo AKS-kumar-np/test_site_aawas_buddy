@@ -137,11 +137,23 @@ form button{
 }
 form button:hover{
   background-color: var(--text-color);
+  transform: scale(1.1);
 }
 form button:focus{
   outline: none;
   background-color: var(--text-color);
 }
+
+.form button:active {
+  transform: scale(1);
+
+}
+
+.btn:active {
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 a{
   text-decoration: none;
   color: var(--accent-color);
